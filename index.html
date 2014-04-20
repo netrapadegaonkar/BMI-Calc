@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>BMI Calculator</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script  type="text/javascript" src="bmi.js"></script> 
+</head>
+
+<body>
+	
+	<div  id="text" align="center">
+<h1>Check Your BMI</h1>
+<form name="f1" >
+<br />
+<table>
+<tr>
+<td>Enter your weight (in kg): </td>
+<td><input type="text" name="weight" id="text3" ><br ></td>
+</tr>
+<tr>
+<td>Enter your height (in m): </td>
+<td><input type="text" name="height" id="text3" ><br /></td>
+</tr>
+</table><br />
+<input type="button" value="calculate BMI" onclick="num()" class="bmi"> 
+<br /><br />
+<input type="button" value="reset" onclick="reset()" class="bmi"></input>
+<br />
+<br>
+<table border="2" align="center" class="tab">
+<tr>
+<td>Underweight:</td>
+<td>< 18.5</td>
+</tr>
+<tr>
+<td>Healthy: </td>
+<td>18.5 - 25</td>
+</tr>
+<tr>
+<td>Overweight:</td>
+<td>25 - 30</td>
+</tr>
+<tr>
+<td>Obese:</td>
+<td>> 30</td>
+</tr>
+</table>
+</div>
+<div id="bmiresult">
+        <div id="bmi" ></div>
+        <div id="status" ></div>
+        
+    </div>
+
+<div id="under">
+	<input type="button" id="u1" value="Causes" onclick="underweight()" >
+	<input type="button" id="u2" value="Result" onclick="underweight1()">
+	<input type="button" id="u3" value="home"  onclick="home()"/>
+</div>
+<div id="over">
+	<input type="button" id="o1" value="Causes" onclick="overweightc()" >
+	<input type="button" id="o2" value="Result" onclick="overweightl()">
+	<input type="button" id="u3" value="home"  onclick="home()"/>
+</div>
+<div id="under1">
+	<p>
+		<b>Causes of Underweight</b>
+Low body weight can stem from a variety of causes. While some underweight people are otherwise physically healthy, others suffer from underlying health concerns that should be treated. The following are some possible causes of being underweight:
+
+    Genetics - If you’ve been thin since high school and being thing runs in your family, it’s likely that you were born with a higher-than-usual metabolism. You also may have a naturally small appetite.
+    High physical activity - If you’re an athlete, you are probably aware that frequent workouts can affect your body weight. However, high physical activity can also flow from an active job or an energetic personality. If you’re on your feet frequently, you may burn more calories than people who are more sedentary (inactive).
+    Illness - Being sick can affect your appetite, as well as your body’s ability to use and store food. If you’ve recently lost a lot of weight without trying, it may be a sign of disease, such as thyroid problems, diabetes, digestive diseases or even cancer. Be sure to talk to your doctor about sudden weight loss.
+    Medicines - Certain prescription medicines can cause nausea and weight loss. Some treatments, such as chemotherapy, can reduce appetite and worsen weight loss from illness.
+    Psychological Issues - Our mental well being affects every part of our lives. Factors like stress and depression can disrupt healthy eating habits. Severe body image fears and distortions can also lead to eating disorders. If you’re suffering from damaging emotional issues, be sure to talk to your family doctor. He or she can help you get the care, assistance or counseling you may need.
+
+	</p>
+</div>
+
+<div id="under2">
+	<p>
+		
+<b>Result of Underweight</b>
+People who are underweight typically are not getting enough calories to fuel their bodies. Often, they are also suffering from malnutrition, since they aren’t taking in enough vitamins and minerals from their food. If you’re underweight, you may be at risk for the following health issues:
+
+    Inhibited growth and development - This is especially true in children and teens, whose bodies need plenty of nutrients to grow and stay healthy.
+    Fragile bones - A deficiency in vitamin D and calcium along with low body weight can lead to weak bones and osteoporosis.
+    Weakened immune system - When you don’t take in enough nutrients, your body cannot store energy and may also have difficulty fighting illness. It may also be difficult for your immune system to bounce back after being sick.
+    Anemia - This condition can be caused by iron deficiency, folate deficiency and vitamin B12 deficiency, resulting in dizziness, fatigue and headaches.
+    Fertility issues - In women, low body weight can lead to irregular periods, lack of periods and infertility.
+    Hair loss - Low body weight can cause hair to thin and fall out easily. It can also cause dry, thin skin and teeth health issues.
+
+
+	</p>
+</div>
+
+<div id="overweightc">
+	<h2>Causes of Overweight</h2>
+The recent increase in overweight and obesity is caused by a complex combination of personal, environmental, social, genetic, and socioeconomic factors.  Weight is gained when there is an energy imbalance.  Energy is consumed through eating food (calories) and is expended through physical activity and metabolism (burning calories).  When more energy is consumed (through eating) than expended (through physical activity and metabolism), the result is a gain of weight.  
+
+ 
+
+Some of the reasons that calories are being consumed at a higher rate are continually increasing portion sizes, abundance and palatability of high calorie food (soft drinks, fast food, etc), and relative inexpensive cost of food.  Calories are also being expended at a lower rate than in previous decades.  Physical activity is not as essential to daily living as it has been in the past.  A smaller proportion of jobs require physical labor, and more time and labor saving devices are available (automobiles, remote controls, etc).  These recent trends significantly contribute to the imbalance in energy expenditure with more calories being consumed, and fewer calories being used.
+
+</div>
+
+
+
+<div id="overweightl">
+	<h2>Overweight Leads TO: </h2><ul>
+<li><u>high blood pressure</u> - Additional fat tissue in the body needs oxygen and nutrients in order to live, which requires the blood vessels to circulate more blood to the fat tissue. This increases the workload of the heart because it must pump more blood through additional blood vessels. More circulating blood also means more pressure on the artery walls. Higher pressure on the artery walls increases the blood pressure. In addition, extra weight can raise the heart rate and reduce the body's ability to transport blood through the vessels.</li>
+<li><u>diabetes</u> - Obesity is the major cause of type 2 diabetes. This type of diabetes usually begins in adulthood but, is now actually occurring in children. Obesity can cause resistance to insulin, the hormone that regulates blood sugar. When obesity causes insulin resistance, the blood sugar becomes elevated. Even moderate obesity dramatically increases the risk of diabetes.</li>
+<li><u>heart disease</u> - Atherosclerosis (hardening of the arteries) is present 10 times more often in obese people compared to those who are not obese. Coronary artery disease is also more prevalent because fatty deposits build up in arteries that supply the heart. Narrowed arteries and reduced blood flow to the heart can cause chest pain (angina) or a heart attack. Blood clots can also form in narrowed arteries and cause a stroke.</li>
+<li><u>joint problems, including osteoarthritis</u> - Obesity can affect the knees and hips because of the stress placed on the joints by extra weight. Joint replacement surgery, while commonly performed on damaged joints, may not be an advisable option for an obese person because the artificial joint has a higher risk of loosening and causing further damage.</li>
+<li><u>sleep apnea and respiratory problems</u> - Sleep apnea, which causes people to stop breathing for brief periods, interrupts sleep throughout the night and causes sleepiness during the day. It also causes heavy snoring. Respiratory problems associated with obesity occur when added weight of the chest wall squeezes the lungs and causes restricted breathing. Sleep apnea is also associated with high blood pressure.</li>
+<li><u>cancer</u> - In women, being overweight contributes to an increased risk for a variety of cancers including breast, colon, gallbladder, and uterus. Men who are overweight have a higher risk of colon and prostate cancers.</li>
+<li><u>metabolic syndrome</u> - The National Cholesterol Education Program has identified metabolic syndrome as a complex risk factor for cardiovascular disease. Metabolic syndrome consists of six major components: abdominal obesity, elevated blood cholesterol, elevated blood pressure, insulin resistance with or without glucose intolerance, elevation of certain blood components that indicate inflammation, and elevation of certain clotting factors in the blood. In the US, approximately one-third of overweight or obese persons exhibit metabolic syndrome.</li>
+<li><u>psychosocial effects</u> - In a culture where often the ideal of physical attractiveness is to be overly thin, people who are overweight or obese frequently suffer disadvantages. Overweight and obese persons are often blamed for their condition and may be considered to be lazy or weak-willed. It is not uncommon for overweight or obese conditions to result in persons having lower incomes or having fewer or no romantic relationships. Disapproval of overweight persons expressed by some individuals may progress to bias, discrimination, and even torment.</li>
+</ul>
+</div>
+</form>
+
+</body>
+</html>
