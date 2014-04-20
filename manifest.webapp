@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "name": "BMI Calculator",
+  "launch_path": "/index.html",
+  "icons": {
+    "120": "/image/logo.jpg"
+  },
+  "developer": {
+    "name": "Netra Padegaonkar",
+     },
+ "default_locale":"en",
+}
