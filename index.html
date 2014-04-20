@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td>Enter your height (in m): </td>
-<td><input type="text" name="height" id="text3" ><br /></td>
+<td><input type="text" name="height" id="text3"><br /></td>
 </tr>
 </table><br />
 <input type="button" value="calculate BMI" onclick="num()" class="bmi"> 
@@ -48,54 +48,96 @@
 </tr>
 </table>
 </div>
-<div id="bmiresult" class="abc">
-        <div id="bmi" ></div>
-        <div id="status" ></div>
+<div id="bmiresult" align="center">
+        <div id="bmi" class="abc"></div>
+        <div id="status" class="abc"></div>
         
-    </div>
+   </div>
+   <br><br>
 
-<div id="under">
-	<input type="button" id="u1" value="Causes" onclick="underweight()" >
-	<input type="button" id="u2" value="Result" onclick="underweight1()">
-	<input type="button" id="u3" value="home"  onclick="home()"/>
+<div id="under" align="center">
+	<input type="button" id="u1" value="Causes" onclick="underweight()" class="bmi"><br><br>
+	<input type="button" id="u2" value="Result" onclick="underweight1()" class="bmi"><br><br>
+	<input type="button" id="u3" value="Tackling Underweight" onclick="underweight2()" class="bmi"><br><br>
+	<input type="button" id="u4" value="home"  onclick="home()" class="bmi"><br><br>
 </div>
-<div id="over">
-	<input type="button" id="o1" value="Causes" onclick="overweightc()" >
-	<input type="button" id="o2" value="Result" onclick="overweightl()">
-	<input type="button" id="u3" value="home"  onclick="home()"/>
+<div id="over" align="center">
+	<input type="button" id="o1" value="Causes" onclick="overweightc()" class="bmi" ><br><br>
+	<input type="button" id="o2" value="Result" onclick="overweightl()" class="bmi"><br><br>
+	<input type="button" id="o3" value="Prevention" onclick="overweight2()" class="bmi"><br><br>
+	<input type="button" id="o4" value="home"  onclick="home()" class="bmi"><br><br>
 </div>
-<div id="under1">
+
+<div id="under1" align="center">
 	<p>
-		<b>Causes of Underweight</b>
-Low body weight can stem from a variety of causes. While some underweight people are otherwise physically healthy, others suffer from underlying health concerns that should be treated. The following are some possible causes of being underweight:
+		<h2>Causes of Underweight</h2>
+Low body weight can stem from a variety of causes. While some underweight people are otherwise physically healthy, others suffer from underlying health concerns that 
 
-    Genetics - If you’ve been thin since high school and being thing runs in your family, it’s likely that you were born with a higher-than-usual metabolism. You also may have a naturally small appetite.
-    High physical activity - If you’re an athlete, you are probably aware that frequent workouts can affect your body weight. However, high physical activity can also flow from an active job or an energetic personality. If you’re on your feet frequently, you may burn more calories than people who are more sedentary (inactive).
-    Illness - Being sick can affect your appetite, as well as your body’s ability to use and store food. If you’ve recently lost a lot of weight without trying, it may be a sign of disease, such as thyroid problems, diabetes, digestive diseases or even cancer. Be sure to talk to your doctor about sudden weight loss.
-    Medicines - Certain prescription medicines can cause nausea and weight loss. Some treatments, such as chemotherapy, can reduce appetite and worsen weight loss from illness.
-    Psychological Issues - Our mental well being affects every part of our lives. Factors like stress and depression can disrupt healthy eating habits. Severe body image fears and distortions can also lead to eating disorders. If you’re suffering from damaging emotional issues, be sure to talk to your family doctor. He or she can help you get the care, assistance or counseling you may need.
+should be treated. The following are some possible causes of being underweight:
+<ul>
+    <li><u>Genetics</u> - If you’ve been thin since high school and being thing runs in your family, it’s likely that you were born with a higher-than-usual 
 
+metabolism. You also may have a naturally small appetite.</li>
+    <li><u>High physical activity</u> - If you’re an athlete, you are probably aware that frequent workouts can affect your body weight. However, high physical 
+
+activity can also flow from an active job or an energetic personality. If you’re on your feet frequently, you may burn more calories than people who are more sedentary 
+
+(inactive).</li>
+    <li><u>Illness</u> - Being sick can affect your appetite, as well as your body’s ability to use and store food. If you’ve recently lost a lot of weight without 
+
+trying, it may be a sign of disease, such as thyroid problems, diabetes, digestive diseases or even cancer. Be sure to talk to your doctor about sudden weight 
+
+loss.</li>
+    <li><u>Medicines</u> - Certain prescription medicines can cause nausea and weight loss. Some treatments, such as chemotherapy, can reduce appetite and worsen 
+
+weight loss from illness.</li>
+    <li><u>Psychological Issues</u> - Our mental well being affects every part of our lives. Factors like stress and depression can disrupt healthy eating habits. 
+
+Severe body image fears and distortions can also lead to eating disorders. If you’re suffering from damaging emotional issues, be sure to talk to your family doctor. 
+
+He or she can help you get the care, assistance or counseling you may need.</li>
+</ul>
 	</p>
 </div>
 
-<div id="under2">
+<div id="under2" align="center">
 	<p>
 		
-<b>Result of Underweight</b>
+<h2>Result of Underweight</h2>
+
 People who are underweight typically are not getting enough calories to fuel their bodies. Often, they are also suffering from malnutrition, since they aren’t taking in enough vitamins and minerals from their food. If you’re underweight, you may be at risk for the following health issues:
-
-    Inhibited growth and development - This is especially true in children and teens, whose bodies need plenty of nutrients to grow and stay healthy.
-    Fragile bones - A deficiency in vitamin D and calcium along with low body weight can lead to weak bones and osteoporosis.
-    Weakened immune system - When you don’t take in enough nutrients, your body cannot store energy and may also have difficulty fighting illness. It may also be difficult for your immune system to bounce back after being sick.
-    Anemia - This condition can be caused by iron deficiency, folate deficiency and vitamin B12 deficiency, resulting in dizziness, fatigue and headaches.
-    Fertility issues - In women, low body weight can lead to irregular periods, lack of periods and infertility.
-    Hair loss - Low body weight can cause hair to thin and fall out easily. It can also cause dry, thin skin and teeth health issues.
-
+<ul>
+    <li><u>Inhibited growth and development</u> -  This is especially true in children and teens, whose bodies need plenty of nutrients to grow and stay healthy.</li>
+    <li><u>Fragile bones</u> - A deficiency in vitamin D and calcium along with low body weight can lead to weak bones and osteoporosis.</li>
+    <li><u>Weakened immune system</u> - When you don’t take in enough nutrients, your body cannot store energy and may also have difficulty fighting illness. It may also be difficult for your immune system to bounce back after being sick.</li>
+    <li><u>Anemia</u> - This condition can be caused by iron deficiency, folate deficiency and vitamin B12 deficiency, resulting in dizziness, fatigue and headaches.</li>
+    <li><u>Fertility issues</u> - In women, low body weight can lead to irregular periods, lack of periods and infertility.</li>
+    <li><u>Hair loss</u> - Low body weight can cause hair to thin and fall out easily. It can also cause dry, thin skin and teeth health issues.</li>
+</ul>
 
 	</p>
 </div>
 
-<div id="overweightc">
+<div id="underp" align="center">
+	<h2>Is it possible to gain weight in a healthy manner?</h2>
+
+A weight gain program may seem like an opportunity for indulgence. Just grab some French fries and have at it! Unfortunately, just as healthy weight loss requires a balanced approach, healthy weight gain means more than adding junk food to your daily meals.
+
+While eating junk food may result in weight gain, it will not address the nutritional deficiencies that come with being underweight. Further, even if the fat, sugar and salt common in junk food don’t show up as extra weight, they can still harm your body. To maximize healthy gains, try the following tips.
+<ul>
+	<li><u>Add healthy calories</u> - Without radically changing your diet, you can increase your calorie intake with each meal by adding nut or seed toppings, 	cheese and healthy side dishes. Try almonds, sunflower seeds, fruit or whole-grain wheat toast.</li>
+
+	<li><u>Go nutrient dense</u> - Instead of eating a lot of empty calories and junk food, focus on eating foods that are rich in nutrients. Consider high-protein 	meats, which can help you to build muscle. Also, choose nutritious carbohydrates, such as brown rice and other whole grains. This helps ensure your body is 	receiving as much nourishment as possible, even if you’re dealing with a reduced appetite.</li>
+
+	<li><u>Snack away</u> - Enjoy snacks that contain plenty of protein and healthy carbohydrates. Consider options like trail mix, protein bars or drinks, and 	crackers with hummus or peanut butter. Also enjoy snacks that contain “good fats,” which are important for a healthy heart. Examples include nuts and avocados.
+
+	<li><u>Eat mini-meals</u> - If you’re struggling with a curbed appetite due to medical or emotional issues, taking in large portions of food may not seem 		appealing. Consider eating smaller meals throughout the day to increase your calorie intake.</li>
+
+	<li><u>Bulk up</u> - While too much aerobic exercise will burn calories and ultimately work against your weight goal, strength training– such as weight-lifting 	or yoga–can help you gain weight by building muscle.</li>
+</ul>
+</div>
+
+<div id="overweightc" align="center">
 	<h2>Causes of Overweight</h2>
 The recent increase in overweight and obesity is caused by a complex combination of personal, environmental, social, genetic, and socioeconomic factors.  Weight is gained when there is an energy imbalance.  Energy is consumed through eating food (calories) and is expended through physical activity and metabolism (burning calories).  When more energy is consumed (through eating) than expended (through physical activity and metabolism), the result is a gain of weight.  
 
@@ -107,7 +149,7 @@ Some of the reasons that calories are being consumed at a higher rate are contin
 
 
 
-<div id="overweightl">
+<div id="overweightl" align="center">
 	<h2>Overweight Leads TO: </h2><ul>
 <li><u>high blood pressure</u> - Additional fat tissue in the body needs oxygen and nutrients in order to live, which requires the blood vessels to circulate more blood to the fat tissue. This increases the workload of the heart because it must pump more blood through additional blood vessels. More circulating blood also means more pressure on the artery walls. Higher pressure on the artery walls increases the blood pressure. In addition, extra weight can raise the heart rate and reduce the body's ability to transport blood through the vessels.</li>
 <li><u>diabetes</u> - Obesity is the major cause of type 2 diabetes. This type of diabetes usually begins in adulthood but, is now actually occurring in children. Obesity can cause resistance to insulin, the hormone that regulates blood sugar. When obesity causes insulin resistance, the blood sugar becomes elevated. Even moderate obesity dramatically increases the risk of diabetes.</li>
@@ -117,6 +159,34 @@ Some of the reasons that calories are being consumed at a higher rate are contin
 <li><u>cancer</u> - In women, being overweight contributes to an increased risk for a variety of cancers including breast, colon, gallbladder, and uterus. Men who are overweight have a higher risk of colon and prostate cancers.</li>
 <li><u>metabolic syndrome</u> - The National Cholesterol Education Program has identified metabolic syndrome as a complex risk factor for cardiovascular disease. Metabolic syndrome consists of six major components: abdominal obesity, elevated blood cholesterol, elevated blood pressure, insulin resistance with or without glucose intolerance, elevation of certain blood components that indicate inflammation, and elevation of certain clotting factors in the blood. In the US, approximately one-third of overweight or obese persons exhibit metabolic syndrome.</li>
 <li><u>psychosocial effects</u> - In a culture where often the ideal of physical attractiveness is to be overly thin, people who are overweight or obese frequently suffer disadvantages. Overweight and obese persons are often blamed for their condition and may be considered to be lazy or weak-willed. It is not uncommon for overweight or obese conditions to result in persons having lower incomes or having fewer or no romantic relationships. Disapproval of overweight persons expressed by some individuals may progress to bias, discrimination, and even torment.</li>
+</ul>
+</div>
+
+<div id="overp" align="center">
+	<h2>How to prevent overweight?</h2>
+There is no simple solution to significantly reduce overweight and obesity. As a public health problem, it should be approached through the use of several channels. Some measures that can be taken include, but are not limited to:
+<ul>
+ 
+
+    <li>Changing the perception of overweight and obesity at all ages from being a cosmetic problem to a health problem.</li>
+
+    <li>Breastfeeding (breastfed infants may be less likely to become overweight or obese, and mothers who breastfeed may return to pre-pregnancy weight more quickly).</li>
+
+    <li>Providing quality daily physical education in all school grades.</li>
+
+    <li>Choosing to be physically active during leisure time (at least 30 minutes of moderately intense physical activity per day, most days of the week, and 60 minutes for children and adolescents).</li>
+
+    <li>Making physical activity a part of children's regular routine and playtime.</li>
+
+    <li>Creating community environments that promote physical activity by providing sidewalks, biking and jogging trails, public recreation centers, etc.</li>
+
+    <li>Reducing time engaged in sedentary activities such as watching television.</li>
+
+    <li>Creating more opportunities for physical activity at worksites (providing onsite exercise facilities, allowing ample time for walking during lunch and other breaks, etc) .</li>
+
+    <li>Making healthy personal food choices including at east 5 servings of fruits and vegetables daily, 6 servings of grains daily (including whole grains), limiting unhealthy fats and sugars, and eating reasonable portion sizes.</li>
+
+    <li>Promoting healthy food choices at home, in schools, at worksites, and in communities.</li>
 </ul>
 </div>
 </form>
