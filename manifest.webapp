@@ -1,12 +1,28 @@
 {
-  "version": "1.0",
-  "name": "BMI Calculator",
-  "launch_path": "/index.html",
-  "icons": {
-    "120": "/image/logo.jpg"
+  "name": "Calculate BMI",
+ 
+   "version": "1.0", 
+
+"description": "Calculates BMI",
+ 
+
+ "launch_path": "/index.html",
+ 
+
+ "icons": {
+     
+	"60": "/image/logo60.jpg",
+	"128": "/image/logo128.jpg"
   },
+ 
+
   "developer": {
     "name": "Netra Padegaonkar",
-     },
- "default_locale":"en",
+	 "url": "http://www.facebook.com/mozillacommunityrajasthan"
+  
 }
+
+
+ 
+}
+
