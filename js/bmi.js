@@ -15,6 +15,7 @@ $('#overweightc').hide();
 $('#overweightl').hide();
 $('#overp').hide();
 $('#underp').hide();
+$('#h1').hide();
 
 
 }
@@ -23,20 +24,21 @@ function calc(){
 	var b = document.f1.height.value;
 	var c = b*b;
 	var d = a/c;
-	$('#bmiresult').show();
+	$('#bmiresult').show(1000);
 	$('#text').hide();
-	$('#ans').show();
+	$('#ans').show(1000);
 	$('#bmi').html("BMI: &nbsp; &nbsp; "+Math.round(d * 100) / 100);
 	if(d < 18.5){
 $('#status').html("You are UNDERWEIGHT");
-$('#under').show();
+$('#under').show(1000);
 }
 if(d > 18.5 && d < 25){
 $('#status').html("You are perfectly HEALTHY!!!");
+$('#h1').show(1000);
 }
 if(d > 25){
 $('#status').html("You are OVERWEIGHT");
-$('#over').show();
+$('#over').show(1000);
 }
 }
 function num(){
